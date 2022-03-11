@@ -83,4 +83,48 @@ print(num2 is not num3)  # Both have the same object
 print(list1 is list2)  # Both have the different objects
 ```
 
+When two strings have different lengths, the string which comes first in the dictionary is said to have the smaller value.
+
+### Ternary expression
+```python
+output_true if condition else output_false
+```
+
 ### Bitwise Operations
+Left Shift '<<' increases
+Right Shift'>>' decreases
+|
+~ a tricky one: ~1 = -2
+
+## Functions
+
+### Strings funcitons
+Functions that are properties of a particular entity are known as **methods**. 
+
+`find(substring, start, end)` returns the first index at which a substring occurs in a string. 
+If no instance of the substring is found, the method returns -1.
+
+`replace(substring_to_be_replaced, new_string)` - replace string_to_be_replaced by the new_string.
+
+`upper()`/`lower()` - changes uppercase to lower case and vice versa.
+
+`'separator'.join(list)` - joins elements of the list with separators.
+
+`"Learn Python {} at {}".format(3, "Educative")` - format string.
+
+### Type conversions
+`ord()` - This function can be used to convert a character to its Unicode value:
+```python
+print(ord('a'))  -> 97
+print(ord('0'))  -> 48
+```
+
+## Lambdas
+A lambda is an anonymous function that returns some form of data.
+
+Lambdas are defined using the lambda keyword. Since they return data, it is a good practice to assign them to a variable.
+
+A lambda cannot have a multi-line expression. This means that our expression needs to be something that can be written in a single line.
+
+
+
