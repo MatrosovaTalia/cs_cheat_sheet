@@ -22,7 +22,8 @@ print(num2 == num3)  # Both have the same value
 print(num3 != num1)  # Both have different values
 
 print(num2 is not num3)  # Both have the same object
-print(list1 is list2)  # Both have the different objects
+print("list1 == list 2", list1 == list2)
+print("list1 is list2", list1 is list2)  # Both have the different objects
 
 # Bitwise Operations
 num1 = 10    # = 
@@ -78,3 +79,18 @@ nums = [-5, 0, 47, -10, 8, 2345]
 
 positive = list(filter(lambda n : n > 0, nums))
 print(positive)
+
+
+# sets
+random_set = set({"Educative", 1408, 3.142, (True, False)})
+print(random_set)
+
+random_set.discard(1408)
+print(random_set)
+
+random_set.remove((True, False))
+print(random_set)
+
+random_set.discard((True, False))
+print(random_set)
+

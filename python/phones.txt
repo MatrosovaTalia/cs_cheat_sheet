@@ -1,0 +1,6 @@
+ a long txt file
+ with phone numbers
+ in format 
+(111) 111-2344
+or 999-888-9090
+Any other 999 or (767)-7878-89 number is incorrect.

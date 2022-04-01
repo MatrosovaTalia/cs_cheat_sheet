@@ -46,11 +46,11 @@ str[start:end:step]
 
 ```python 
 my_string = "Hello, I am a friendly string."
-print(my_string[:7])  # All the characters before 'I'
-print(my_string[7:])  # All the characters starting from 'I'
-print(my_string[:])  # The whole string
+print(my_string[:7])    # All the characters before 'I'
+print(my_string[7:])    # All the characters starting from 'I'
+print(my_string[:])     # The whole string
 print(my_string[::-1])  # The whole string in reverse (step is -1)
-print(my_string[::-1]) # The string in reverse (step is -2)
+print(my_string[::-1])  # The string in reverse (step is -2)
 ```
 
 ### NoneType
@@ -80,7 +80,7 @@ print(num2 == num3)  # Both have the same value
 print(num3 != num1)  # Both have different values
 
 print(num2 is not num3)  # Both have the same object
-print(list1 is list2)  # Both have the different objects
+print(list1 is list2)    # Both have the different objects
 ```
 
 When two strings have different lengths, the string which comes first in the dictionary is said to have the smaller value.
@@ -126,5 +126,33 @@ Lambdas are defined using the lambda keyword. Since they return data, it is a go
 
 A lambda cannot have a multi-line expression. This means that our expression needs to be something that can be written in a single line.
 
+# Data types
+## List
 
+`len()` is a function. O(1), 
+datatype has a attribute len, which is incremented, when data is accessed. The `len()` function accesses that attribute and returns the value.
+
+## Tuple
+A tuple is very similar to a list, except for the fact that its contents cannot be changed. In other words, a tuple is immutable. However, it can contain mutable elements like a list. These elements can be altered.
+
+The contents of a tuple are enclosed in parentheses, (). They are also ordered, and hence, follow the linear index notation.
+
+Since tuples are immutable, we can’t add or delete elements from them. Furthermore, it isn’t possible to append another tuple to an existing tuple.
+
+## Set
+The data is not indexed, so we can’t access elements using indices or get().
+
+This is perhaps the simplest data structure in Python. We can think of it as a bag containing random items.
+
+Mutable data structures like lists or dictionaries can’t be added to a set. However, adding a tuple is perfectly fine.
+
+The `set()` constructor is an alternate way of creating sets. The advantage it presents is that it allows us to make an empty set.
+
+```python
+{} - empty dict
+set() - empty set
+```
+
+The `discard()` or `remove()` operations can be used to delete a particular item from a set.
+The `remove()` method generates an error if the item is not found, unlike the `discard()` method.
 
