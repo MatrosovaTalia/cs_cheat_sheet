@@ -16,10 +16,3 @@ def bin_search(arr, t):
         return -1
     else:
         return m
-
-
-print(bin_search([1, 3, 4, 5,70, 112, 135], 0))
-print(bin_search([1, 3, 4, 5,70, 112, 135], 135))
-print(bin_search([1, 3, 4, 5,70, 112, 135], 125))
-print(bin_search([1, 3, 4, 5,70, 112, 135], 1))
-print(bin_search([1, 3, 4, 5,70, 112, 135], -20))
